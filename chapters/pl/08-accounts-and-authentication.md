@@ -1,4 +1,4 @@
-## 7. Konta, uwierzytelnianie i zakres usług
+## 8. Konta, uwierzytelnianie i zakres usług
 
 Ta sama aplikacja kliencka może działać w różnych wariantach umownych i administracyjnych. Firma musi ustalić rzeczywiście używane konto, przestrzeń roboczą i sposób uwierzytelniania, zamiast wnioskować o poziomie ochrony na podstawie nazwy aplikacji lub samego faktu opłacania abonamentu.
 

@@ -1,4 +1,4 @@
-## 10. Proponowana architektura z LiteLLM
+## 11. Proponowana architektura z LiteLLM
 
 Projekt zakłada wykorzystanie kontrolowanej przez firmę bramy jako punktu wejścia dla zatwierdzonych wywołań modeli OpenAI. LiteLLM jest kandydatem do tej roli i może zostać ograniczone do połączeń z OpenAI. Projekt musi wskazywać, które żądania aplikacji klienckich rzeczywiście przechodzą przez bramę i co następuje, gdy kontrola treści jest niedostępna.
 

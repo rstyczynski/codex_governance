@@ -1,4 +1,4 @@
-## 8. Technical Protection and Its Limits
+## 9. Technical Protection and Its Limits
 
 Security mechanisms protect against particular threats. Encryption can protect a connection or stored data, access controls can restrict authorized users, and agent sandboxes can limit actions on a machine. These mechanisms do not all provide the same protection against the service operator or against an authorized but inappropriate disclosure.
 

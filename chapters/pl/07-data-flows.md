@@ -1,4 +1,4 @@
-## 6. Przepływy danych w ChatGPT i Codex
+## 7. Przepływy danych w ChatGPT i Codex
 
 Decyzja dotycząca poufności wymaga pełnego obrazu informacji opuszczających środowisko firmy. Znaczenie ma zarówno sam prompt, jak i załączniki, pobrane dokumenty, fragmenty kodu oraz wyniki narzędzi dodawane do kontekstu modelu. Uruchomienie agenta na firmowym laptopie nie oznacza samo w sobie, że przetwarzanie przez model odbywa się lokalnie.
 
@@ -14,7 +14,7 @@ Dokumentacja bramy OpenAI wyraźnie wskazuje, że skonfigurowana trasa przez bra
 
 **Planowany rezultat:** Schematy przepływu danych wskazujące odbiorców, miejsca przetwarzania i miejsca przechowywania dla każdego zatwierdzonego sposobu pracy.
 
-### 6.1 Poziomy konfiguracji i instrukcje
+### 7.1 Poziomy konfiguracji i instrukcje
 
 Codex obsługuje konfigurację systemową, użytkownika i projektu. Jest to hierarchia ustawień, a nie dowód istnienia trzech równoważnych magazynów pamięci podręcznej. W ocenie należy zapisać zarówno zakres ustawienia, jak i fizyczną lokalizację danych, na które ono wpływa.
 
@@ -29,7 +29,7 @@ Kolejność pierwszeństwa konfiguracji i wymuszane wymagania to osobne mechaniz
 
 Pliki instrukcji tworzą kolejną warstwę. Pliki `AGENTS.md` użytkownika i projektu mogą wnosić treść do kontekstu modelu; są wskazówkami, a nie zamiennikiem ograniczeń sandboxa lub sieci. [Wyszukiwanie instrukcji](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
 
-### 6.2 Stan lokalny, pamięć podręczna i pliki projektu
+### 7.2 Stan lokalny, pamięć podręczna i pliki projektu
 
 `CODEX_HOME` domyślnie wskazuje `~/.codex` i stanowi główny katalog stanu użytkownika. Stan oparty na SQLite można przenieść przez `sqlite_home` lub `CODEX_SQLITE_HOME`. Rzeczywiste ścieżki trzeba więc ustalić dla wybranej aplikacji i hosta. [Zmienne środowiskowe](https://learn.chatgpt.com/docs/config-file/environment-variables).
 

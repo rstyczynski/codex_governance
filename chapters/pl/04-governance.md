@@ -1,4 +1,4 @@
-## 3. Nadzór: od ryzyka biznesowego do kryteriów zatwierdzenia
+## 4. Nadzór: od ryzyka biznesowego do kryteriów zatwierdzenia
 
 Nadzór określa, w jaki sposób firma rozstrzyga, czy dane zastosowanie AI jest akceptowalne. Wyzwania biznesowe i przykład poufnych badań pokazują, co firma może utracić; ten rozdział przekłada te obawy na odpowiedzialność, kryteria zatwierdzenia i wymagane dowody. Kolejne rozdziały oceniają umowy, politykę firmową i zabezpieczenia techniczne względem tych wymagań.
 

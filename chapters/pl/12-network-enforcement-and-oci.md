@@ -1,4 +1,4 @@
-## 11. Egzekwowanie reguł sieciowych i OCI Network Firewall
+## 12. Egzekwowanie reguł sieciowych i OCI Network Firewall
 
 Brama może egzekwować politykę tylko wobec ruchu, który do niej trafia. Proponowana warstwa sieciowa ogranicza więc bezpośredni dostęp z zarządzanych urządzeń i aplikacji, dopuszczając zatwierdzone połączenia bramy do OpenAI. DNS, proxy HTTP i reguły firewalla pełnią uzupełniające role; żadnego z tych mechanizmów nie należy traktować jako samodzielnego, kompletnego rozwiązania.
 

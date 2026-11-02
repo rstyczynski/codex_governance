@@ -1,8 +1,8 @@
-## 4. Perspektywa polityk i umów OpenAI
+## 5. Perspektywa polityk i umów OpenAI
 
 Zobowiązania OpenAI trzeba oceniać w odniesieniu do usługi rzeczywiście kupowanej przez firmę i przyjętych warunków. Poniższe dokumenty odpowiadają na różne pytania: co strony mogą robić z informacjami, jak przetwarzane są dane osobowe, jakie zastosowania są dozwolone i jakie zabezpieczenia są dostępne. W praktyce poufność biznesowa łączy obowiązki umowne z konfiguracją; nie oznacza zapewnienia, że OpenAI technicznie nie może uzyskać dostępu do treści.
 
-### 4.1 Ustalenie właściwych dokumentów
+### 5.1 Ustalenie właściwych dokumentów
 
 Dla usług indywidualnych w Polsce punktem wyjścia są Europe Terms of Use; usługi biznesowe podlegają osobnej ścieżce umownej. Płatnego konta osobistego nie należy traktować jak odpowiednika umowy firmowej. [Europe Terms of Use, postanowienia wstępne](https://openai.com/policies/eu-terms-of-use/).
 
@@ -15,19 +15,19 @@ Dla usług indywidualnych w Polsce punktem wyjścia są Europe Terms of Use; us�
 
 Dla Codex należy zapisać sposób logowania i połączenia z dostawcą. Uwierzytelnianie wpływa na właściwe mechanizmy kontroli i zasady postępowania z danymi; dodanie LiteLLM do ścieżki samo w sobie nie zmienia umowy. [Uwierzytelnianie Codex](https://learn.chatgpt.com/docs/auth).
 
-### 4.2 Poufność i dozwolone wykorzystanie treści biznesowych
+### 5.2 Poufność i dozwolone wykorzystanie treści biznesowych
 
 Punkty 4.2 i 7 Services Agreement ograniczają wykorzystanie treści, wymagają wyraźnej zgody na ulepszanie usług i nakładają obowiązki poufności. Dopuszczają określone ujawnienia, w tym niezbędnym odbiorcom związanym poufnością i wymagane prawem. Są to zobowiązania umowne z wyjątkami, a nie bezwzględny zakaz dostępu. [Services Agreement, pkt 4.2 i 7](https://openai.com/policies/services-agreement/).
 
 **Decyzja firmy:** Traktować nieopublikowane metody i badania jako poufne również po usunięciu identyfikatorów osobowych. Własność, poufność i dozwolone ponowne wykorzystanie rozpatrywać osobno. Przed dopuszczeniem kluczowego know-how ocenić środki ochrony prawnej i odpowiedzialność z przyjętej umowy, zamiast zakładać pełną rekompensatę każdej straty.
 
-### 4.3 Trening modeli i wtórne wykorzystanie
+### 5.3 Trening modeli i wtórne wykorzystanie
 
 OpenAI odróżnia treści usług indywidualnych, które mogą służyć do treningu z uwzględnieniem ustawień, od biznesowych danych wejściowych i wyników, niewykorzystywanych do treningu domyślnie. Opisuje też możliwość wyraźnego udostępnienia danych API, w tym przez feedback. Zgody treningowe wymagają więc sprawdzenia wraz z typem konta i ustawieniami administratora. [Polityka ulepszania modeli](https://openai.com/policies/how-your-data-is-used-to-improve-model-performance/).
 
 **Decyzja firmy:** Wyłączyć niezatwierdzone udostępnianie i przejrzeć sposób przekazywania feedbacku. Wyłączenie treningu nie zastępuje ograniczeń innych zastosowań, przechowywania ani dalszego przekazywania.
 
-### 4.4 Dane osobowe i DPA
+### 5.4 Dane osobowe i DPA
 
 DPA reguluje dane osobowe przetwarzane w imieniu klienta. Obejmuje udokumentowane instrukcje, poufność, zgłaszanie naruszeń, warunkowe prawa audytowe, podwykonawców i zwrot lub usuwanie z wyjątkami prawnymi. Definicja Customer Data jest węższa niż cała wiedza biznesowa. [DPA, pkt 1–4 i 6](https://openai.com/policies/data-processing-addendum/).
 
@@ -35,7 +35,7 @@ Europe Privacy Policy wyraźnie wyłącza ze swojego zakresu treści przetwarzan
 
 **Decyzja firmy:** Ustalić właściwe role dotyczące prywatności, cel przetwarzania, uprawnienie do ujawnienia, zasady transferów i instrukcje retencji. Know-how niebędące danymi osobowymi oceniać również w świetle zobowiązań poufności.
 
-### 4.5 Bezpieczeństwo, dostęp i przechowywanie
+### 5.5 Bezpieczeństwo, dostęp i przechowywanie
 
 Oświadczenie OpenAI dotyczące prywatności biznesowej opisuje szyfrowanie, ograniczenia dostępu i właściwe dla produktów okoliczności dostępu upoważnionego personelu. Opisy te nie oznaczają, że dostawca nie może przetwarzać informacji w czytelnej postaci. [Enterprise privacy](https://openai.com/enterprise-privacy/).
 
@@ -43,7 +43,7 @@ Kontrola retencji API ma warunki i wyjątki właściwe dla punktów końcowych. 
 
 **Decyzja firmy:** Zatwierdzić konkretny profil retencji i dostępu dla każdej ścieżki. Uwzględnić lokalny stan Codex i kopie firmowej bramy; ustawienia OpenAI nie usuwają tych magazynów.
 
-### 4.6 Podwykonawcy, integracje i warunki funkcji
+### 5.6 Podwykonawcy, integracje i warunki funkcji
 
 OpenAI publikuje podwykonawców wraz z produktami, lokalizacjami i celami przetwarzania. Wykaz należy wykorzystać do oceny wybranej usługi, zamiast zakładać jednego odbiorcę lub jeden kraj przetwarzania. [Lista podwykonawców](https://openai.com/policies/sub-processor-list/).
 
@@ -51,13 +51,13 @@ Service Terms dodają postanowienia właściwe dla funkcji, w tym zastrzeżenia 
 
 **Decyzja firmy:** Osobno zatwierdzać hosting LiteLLM, skanery, systemy logowania i narzędzia zewnętrzne. Same zobowiązania OpenAI nie uzasadniają ich dostępu.
 
-### 4.7 Dozwolone użycie i wersje polityk
+### 5.7 Dozwolone użycie i wersje polityk
 
 Usage Policies nakładają obowiązki na użytkowników, w tym dotyczące prywatności, bezpieczeństwa i ograniczenia niektórych działań. Nie zastępują obowiązków dostawcy w zakresie poufności i nie czynią zgodnym z prawem ujawnienia, do którego brakuje uprawnienia. [Usage Policies](https://openai.com/policies/usage-policies/revisions/2025-10-29/).
 
 Data oceny to **2 listopada 2026 r.** Właściwa jest wersja obowiązująca od **29 października 2025 r.** [Ogólna strona zasad](https://openai.com/en-GB/policies/usage-policies/) wyświetla obecnie wersję obowiązującą od **20 listopada 2026 r.**; należy oznaczyć ją jako nadchodzącą i wcześniej ocenić skutki zmiany.
 
-### 4.8 Dokumentacja dopuszczenia do wdrożenia
+### 5.8 Dokumentacja dopuszczenia do wdrożenia
 
 Firma powinna zachować zapis zatwierdzenia łączący ocenę umowną z wdrożoną konfiguracją. Jest to materiał potrzebny do wyjaśnienia, dlaczego dany sposób pracy został dopuszczony.
 

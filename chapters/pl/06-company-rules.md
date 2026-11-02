@@ -1,4 +1,4 @@
-## 5. Projekt zasad firmowych
+## 6. Projekt zasad firmowych
 
 Zasady firmowe przekładają ocenę ryzyka na instrukcje, których pracownicy mogą przestrzegać. Poniższy projekt stanowi propozycję podstawowych zasad do zatwierdzenia i wykorzystuje przekazany przykład Oracle jako wzorzec organizacyjny. Nie przenosi na tę firmę zatwierdzeń Oracle, zapewnień o zarządzaniu kluczami ani ustaleń umownych.
 

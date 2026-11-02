@@ -1,4 +1,4 @@
-## 9. Retention, Deletion and Zero Data Retention
+## 10. Retention, Deletion and Zero Data Retention
 
 The business must distinguish information used temporarily for a response from information retained for history, application state, monitoring or legal obligations. Disabling model training does not resolve all of these questions, and deleting an item from a user interface does not establish that every copy has immediately disappeared.
 

@@ -1,4 +1,4 @@
-## 13. Validation, Operations and Incident Response
+## 14. Validation, Operations and Incident Response
 
 Approval should follow demonstrated control of the intended workflows, rather than installation of individual products. Validation must confirm that approved tasks remain usable, restricted transfers are prevented on covered routes, and failure conditions do not silently disable protection. Ongoing operation must preserve those properties as products and policies change.
 

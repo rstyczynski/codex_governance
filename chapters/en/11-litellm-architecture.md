@@ -1,4 +1,4 @@
-## 10. Proposed Architecture with LiteLLM
+## 11. Proposed Architecture with LiteLLM
 
 The proposed design uses a company-controlled gateway as the entry point for approved OpenAI model calls. LiteLLM is a candidate for that role and can be restricted to OpenAI backends. The design must identify which client requests actually traverse the gateway and what happens when inspection is unavailable.
 

@@ -1,4 +1,4 @@
-## 9. Przechowywanie, usuwanie i Zero Data Retention
+## 10. Przechowywanie, usuwanie i Zero Data Retention
 
 Firma musi odróżniać informacje używane tymczasowo do przygotowania odpowiedzi od danych zachowywanych jako historia, stan aplikacji, materiał do monitorowania lub w związku z obowiązkami prawnymi. Wyłączenie treningu modeli nie rozstrzyga wszystkich tych kwestii, a usunięcie elementu z interfejsu użytkownika nie dowodzi natychmiastowego zniknięcia każdej jego kopii.
 

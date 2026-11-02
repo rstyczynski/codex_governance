@@ -1,4 +1,4 @@
-## 12. DLP and Agent Controls
+## 13. DLP and Agent Controls
 
 DLP inspects content for defined sensitive information, while agent controls limit which information and systems an assistant can reach. Combining them can reduce accidental disclosure. The detection of a recognizable credential or known document must be distinguished from recognition of a novel business idea, which may have no reliable detectable signature.
 

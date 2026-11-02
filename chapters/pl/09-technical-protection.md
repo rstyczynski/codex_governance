@@ -1,4 +1,4 @@
-## 8. Zabezpieczenia techniczne i ich ograniczenia
+## 9. Zabezpieczenia techniczne i ich ograniczenia
 
 Mechanizmy bezpieczeństwa chronią przed konkretnymi zagrożeniami. Szyfrowanie może zabezpieczać połączenie lub zapisane dane, kontrola dostępu ograniczać grono uprawnionych użytkowników, a środowisko izolowane agenta, czyli sandbox, ograniczać działania na komputerze. Mechanizmy te nie zapewniają jednak takiej samej ochrony przed operatorem usługi ani przed ujawnieniem dokonanym przez osobę uprawnioną, ale niezgodnie z zasadami.
 

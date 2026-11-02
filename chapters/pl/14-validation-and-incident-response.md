@@ -1,4 +1,4 @@
-## 13. Weryfikacja, utrzymanie i reagowanie na incydenty
+## 14. Weryfikacja, utrzymanie i reagowanie na incydenty
 
 Zatwierdzenie powinno wynikać z wykazanej kontroli nad planowanymi sposobami pracy, a nie z samej instalacji produktów. Weryfikacja musi potwierdzić, że zatwierdzone zadania nadal dają się wykonywać, zabronione transfery są blokowane na objętych ochroną ścieżkach, a awarie nie wyłączają po cichu zabezpieczeń. Utrzymanie powinno zachowywać te właściwości mimo zmian produktów i zasad.
 

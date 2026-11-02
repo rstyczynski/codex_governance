@@ -1,4 +1,4 @@
-## 5. Draft Company Rules
+## 6. Draft Company Rules
 
 Company rules translate the risk assessment into instructions employees can follow. The draft below is a proposed baseline for approval, using the supplied Oracle example as an organizational pattern. It does not transfer Oracle approvals, key-management claims or contractual arrangements to this company.
 

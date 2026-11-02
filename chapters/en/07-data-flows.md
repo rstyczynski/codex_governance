@@ -1,4 +1,4 @@
-## 6. Data Flows in ChatGPT and Codex
+## 7. Data Flows in ChatGPT and Codex
 
 A confidentiality decision requires a complete picture of what leaves the business environment. Relevant content includes the prompt as well as attachments, retrieved documents, code fragments and tool results added to the model's context. Running an agent on a company laptop does not by itself establish that inference occurs locally.
 
@@ -14,7 +14,7 @@ OpenAI's gateway documentation explicitly notes that a configured gateway route 
 
 **Planned output:** Data-flow diagrams with recipients, processing locations and storage points for each approved workflow.
 
-### 6.1 Configuration scopes and instructions
+### 7.1 Configuration scopes and instructions
 
 Codex supports system, user and project configuration. This is a hierarchy of settings, not evidence of three equivalent cache stores. For an assessment, record both the scope of a setting and the physical location of the data it controls.
 
@@ -29,7 +29,7 @@ Configuration precedence and enforced requirements are separate mechanisms: plac
 
 Instruction files form another layer. User-level and project-level `AGENTS.md` files can contribute text to model context; they are guidance, not a replacement for sandbox or network enforcement. [Instruction discovery](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
 
-### 6.2 Local state, caches and project artefacts
+### 7.2 Local state, caches and project artefacts
 
 `CODEX_HOME` defaults to `~/.codex` and is a root for user state. SQLite-backed state can be relocated through `sqlite_home` or `CODEX_SQLITE_HOME`. Actual paths must therefore be resolved for the selected client and host. [Environment variables](https://learn.chatgpt.com/docs/config-file/environment-variables).
 

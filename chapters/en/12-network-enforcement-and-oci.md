@@ -1,4 +1,4 @@
-## 11. Network Enforcement and OCI Network Firewall
+## 12. Network Enforcement and OCI Network Firewall
 
 The gateway can enforce policy only for traffic that reaches it. The proposed network layer therefore restricts direct access from managed devices and workloads while permitting the gateway's approved upstream connections. DNS, HTTP proxy and firewall rules have complementary roles, and none should be treated as a complete solution on its own.
 

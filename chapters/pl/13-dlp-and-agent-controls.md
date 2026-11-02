@@ -1,4 +1,4 @@
-## 12. DLP i ograniczenia działań agentów
+## 13. DLP i ograniczenia działań agentów
 
 DLP analizuje treść w poszukiwaniu określonych informacji wrażliwych, a ograniczenia działań agentów wyznaczają, do jakich informacji i systemów asystent może uzyskać dostęp. Połączenie tych mechanizmów może ograniczyć przypadkowe ujawnienie. Wykrycie rozpoznawalnego sekretu dostępu lub znanego dokumentu trzeba jednak odróżnić od rozpoznania nowego pomysłu biznesowego, który może nie mieć wiarygodnego wzorca umożliwiającego wykrywanie.
 

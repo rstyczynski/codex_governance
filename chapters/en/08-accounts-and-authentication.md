@@ -1,4 +1,4 @@
-## 7. Accounts, Authentication and Service Boundaries
+## 8. Accounts, Authentication and Service Boundaries
 
 The same client can be used under different commercial and administrative arrangements. A company must identify the account, workspace and authentication route actually used, rather than infer protection from the application name or the fact that a subscription is paid.
 

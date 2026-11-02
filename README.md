@@ -1,13 +1,13 @@
 # OpenAI secure use
 
-Working guidance on confidentiality and know-how protection when using ChatGPT, Codex and the OpenAI API. The documents are draft version 0.3 and include proposed controls that still require review and validation.
+Working guidance on confidentiality and know-how protection when using ChatGPT, Codex and the OpenAI API. The documents are draft version 0.4 and include proposed controls that still require review and validation.
 
 ## Documents
 
 - [English master document](openai-confidentiality-draft.md) — introduction, draft status and table of contents; the primary working version.
 - [Polish master document](openai-confidentiality-draft-pl.md) — translated introduction and table of contents.
 
-Each master links to 13 chapter files and a references file in `chapters/en/` or `chapters/pl/`. Matching filenames identify corresponding sections across languages.
+Each master links to 14 chapter files and a references file in `chapters/en/` or `chapters/pl/`. Matching filenames identify corresponding sections across languages.
 
 ## Contributing
 

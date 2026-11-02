@@ -1,4 +1,4 @@
-## 3. Governance: From Business Risk to Approval Criteria
+## 4. Governance: From Business Risk to Approval Criteria
 
 Governance defines how the company decides whether an AI use case is acceptable. The business challenges and research example establish what may be lost; this chapter turns those concerns into ownership, approval criteria and evidence requirements. The following chapters assess contracts, company policy and technical controls against those requirements.
 
