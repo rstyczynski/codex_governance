@@ -56,3 +56,16 @@ Public sources below were consulted on **2 November 2026**. Retain effective dat
 35. **OpenAI. [March 20 ChatGPT outage: Here’s what happened](https://openai.com/index/march-20-chatgpt-outage/).** Published 24 March 2023; rechecked 2 November 2026. Provider incident report. Relevant chapter: 3.
 36. **Garante. [ChatGPT investigation announcement, with court-outcome update](https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10085432).** Rechecked 2 November 2026; read the update alongside the original penalty announcement. Relevant chapter: 3.
 37. **Tribunale di Roma. [Judgment in OpenAI's challenge to Garante decision 755/2024](https://dei.web.uniroma1.it/sites/default/files/allegati/2026-05/Trib_Roma_OpenAI_Garante_2026.pdf).** Decided 18 March 2026; copy hosted by Sapienza University, rechecked 2 November 2026. Grounds and operative outcome on pages 5–7. Relevant chapter: 3.
+
+### Standards and EU AI Act mapping
+
+Sources below were checked on 2 November 2026. They support Chapter 4 and Appendix A. The mapping is an author assessment, not a finding by ISO, NIST or the Commission.
+
+38. **ISO. [ISO/IEC 42001:2023, edition 1](https://www.iso.org/standard/42001).** Official scope and management-system description; full normative text not reproduced.
+39. **Kimberly Lucy / Microsoft. [Overview of ISO/IEC 42001, hosted by UNIDO](https://www.unido.org/sites/default/files/files/2025-07/Microsoft%20-%20Overview%20of%20ISO%20IEC%2042001.pdf).** Author-presented overview; slide 5 supports the clause structure, not a normative conformity assessment.
+40. **NIST. [AI RMF 1.0 Core](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/).** January 2023 framework; selected categories/subcategories used for the confidentiality mapping.
+41. **NIST. [AI 600-1: Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf).** July 2024; companion generative-AI risk context.
+42. **EU. [Regulation (EU) 2024/1689, consolidated identifier 27 July 2026](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727).** Consolidation identified by the Commission article explorer; current article texts consulted through the next reference.
+43. **European Commission. [AI Act Explorer](https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-2).** Articles 2, 3, 4, 5, 6, 25, 26, 27 and 50, individually linked in Appendix A; role and use-case applicability screening.
+44. **European Commission. [Current AI Act implementation timeline](https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline).** Amended application dates and transitional milestones as at the assessment date.
+45. **European Commission. [AI Act policy overview](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai).** Distinguishes the regulatory areas relevant to the role-specific handoffs.

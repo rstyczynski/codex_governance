@@ -1,6 +1,6 @@
 ## 11. Proposed Architecture with LiteLLM
 
-The proposed design uses a company-controlled gateway as the entry point for approved OpenAI model calls. LiteLLM is a candidate for that role and can be restricted to OpenAI backends. The design must identify which client requests actually traverse the gateway and what happens when inspection is unavailable.
+This chapter develops the company-controlled gateway pattern from [Chapter 4](04-governance.md#42-proportionate-adoption). It is an option for use cases requiring centralized enforcement, rather than the default for every OpenAI task. The proposed design uses a company-controlled gateway as the entry point for approved OpenAI model calls. LiteLLM is a candidate for that role and can be restricted to OpenAI backends. The design must identify which client requests actually traverse the gateway and what happens when inspection is unavailable.
 
 ```text
 Managed user device or approved application
@@ -23,7 +23,7 @@ Parallel controls:
 
 **Chapter sketch**
 
-- Start with a pilot using company applications and Codex CLI configured for approved OpenAI API access through LiteLLM.
+- Define the supported route for company applications and Codex CLI using approved OpenAI API access through LiteLLM; record other clients and operations as outside that route until separately assessed.
 - Select the upstream authentication and billing model explicitly. A ChatGPT subscription route is a separate design option, not an assumed equivalent to API-key access.
 - Define model allowlists, user authentication, credentials, limits and administrative change control.
 - Provide an approved chat interface if public ChatGPT is blocked; an API-backed interface is not automatically feature-equivalent to ChatGPT.

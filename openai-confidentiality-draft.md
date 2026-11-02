@@ -1,6 +1,6 @@
 # Confidentiality and Know-how Protection When Using ChatGPT and Codex
 
-**Version:** 0.4 — developed research findings and policy/contract chapters; remaining chapters in draft\
+**Version:** 0.5 — governance, adoption guidance and ISO/NIST/EU AI Act mapping; technical chapters remain in draft\
 **Date:** 2 November 2026  
 **Audience:** Business owners, technology leaders, security teams and legal advisers  
 **Status:** Working draft; proposed controls and policy require organizational approval and technical validation.
@@ -11,9 +11,13 @@ ChatGPT and Codex can help a business analyse documents, develop software and ex
 
 This document focuses on OpenAI: ChatGPT, Codex and the OpenAI API. LiteLLM, network firewalls, HTTP proxies and Data Loss Prevention (DLP) are considered as controls around access to OpenAI, not as alternative model providers. Oracle Cloud Infrastructure (OCI) is considered as a possible hosting and network enforcement environment.
 
+This guide addresses one control domain within wider AI governance: confidentiality and control of business know-how when using OpenAI. It supports decisions about permitted information, services, access routes and accountable owners. An organization-wide AI inventory is an input to this assessment; this document does not govern the full AI portfolio or establish compliance or certification.
+
+Confidentiality approval does not approve output accuracy, fairness, intellectual-property rights or autonomous actions. The business owner must arrange the relevant quality, legal, privacy, security and operational reviews before relying on outputs or authorizing consequential actions. Chapter 4 identifies those handoffs. Appendix A maps this document to ISO/IEC 42001:2023, NIST AI RMF 1.0 and applicable EU AI Act provisions, with applicability decisions, evidence requirements and gaps.
+
 The proposed approach combines company policy, technical enforcement and operational verification. A policy defines permitted information and uses. Technical controls restrict access and inspect supported data flows. Verification establishes whether those controls work in the actual deployment. None of these replaces an assessment of OpenAI's contractual commitments and the residual trust placed in the provider.
 
-Each chapter opens with an introductory paragraph. Chapter 3 develops the earlier research findings, and Chapter 5 is developed from official OpenAI documents; the remaining chapters retain sketches for further development. Source-based statements link to their supporting documents. Proposed company requirements are design decisions, not claims that a product already provides or enforces them. The default architecture under consideration routes approved model requests through a company-controlled LiteLLM gateway and blocks unapproved direct access. It has not yet been implemented or tested.
+Each chapter opens with an introductory paragraph. Chapter 3 develops the earlier research findings, Chapter 4 defines the proposed governance approach, and Chapter 5 is developed from official OpenAI documents; the technical chapters retain sketches for further development. Source-based statements link to their supporting documents. Proposed company requirements are design decisions, not claims that a product already provides or enforces them. Chapter 4 sets out adoption patterns selected by information sensitivity and control requirements. For workflows requiring a company-controlled gateway, Chapter 11 considers LiteLLM with restrictions on unapproved direct access. LiteLLM and OCI are design options rather than prerequisites for every use case. The proposed architecture has not been implemented or tested.
 
 ## Table of Contents
 
@@ -52,6 +56,10 @@ Each chapter opens with an introductory paragraph. Chapter 3 develops the earlie
 ### Part VII — Validation, Operations and Incident Response
 
 - [Chapter 14 — Validation, Operations and Incident Response](chapters/en/14-validation-and-incident-response.md)
+
+### Appendices
+
+- [Appendix A — ISO/IEC 42001, NIST AI RMF and EU AI Act Mapping](appendices/en/appendix-a-standards-and-regulatory-mapping.md)
 
 ### References
 
