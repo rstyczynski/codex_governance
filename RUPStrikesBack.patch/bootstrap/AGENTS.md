@@ -26,6 +26,13 @@ conversation context. If the canonical method and local patch do not state how
 to proceed, stop and request a Product Owner decision; do not invent a state,
 transition, or artifact format.
 
+## Sprint identifiers
+
+Use `Sprint.0` for initial planning, `I.x` for Inception, `E.x` for Elaboration,
+`C.x` for Construction, and `T.x` for Transition. Number each phase from 1.
+The local P0.phase policy in `RUPStrikesBack.patch/RUP_patch.md`
+defines headings and evidence paths and overrides canonical numeric numbering.
+
 ## Starting a sprint
 
 Do not start a RUP cycle automatically. Start one only when the Product Owner explicitly requests it and the selected sprint has `Status: Progress` in the root `PLAN.md`.

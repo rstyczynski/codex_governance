@@ -95,3 +95,15 @@ Test: Review confirms that the milestone decision has explicit supporting eviden
 Create the Construction plan from the validation evidence, including the updated backlog, delivery order, resource assumptions, and remaining risks.
 
 Test: Review confirms that the Construction plan follows accepted decisions, unresolved risks, resource assumptions, and the milestone assessment.
+
+### PBI-017. Establish the research basis for the guidance
+
+Establish the research findings needed to explain confidentiality and know-how protection in organizational OpenAI use. Distinguish supported conclusions, design options and unresolved questions, including their implications for small, medium-sized and large organizations.
+
+Test: Review confirms that findings support the vision, identify their evidence and limits, and provide a useful basis for writing the guide.
+
+### PBI-018. Develop the first guidance draft
+
+Develop practical guidance that extends the vision and research into understandable organizational decisions. Address all three organization sizes and distinguish proposed safeguards and example records from implemented controls and deployment evidence.
+
+Test: Review confirms that the draft follows the vision and research, serves its intended readers, and makes incomplete or unvalidated material explicit.

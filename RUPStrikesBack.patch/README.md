@@ -33,27 +33,34 @@ The bootstrap flow:
    current branch to `origin` without force.
 
 Bootstrap establishes a generic portfolio only. It does not define a product
-or execute a sprint. It preselects Sprint 0 with `Status: Progress`, ready for
+or execute a sprint. It preselects Sprint.0 with `Status: Progress`, ready for
 an explicit Product Owner request.
 
-## Start Sprint 0
+## Sprint identifiers
 
-Sprint 0 is already marked `Status: Progress` by the bootstrap plan. Ask
-Codex explicitly to start Sprint 0 with the `rup-strikes-back` skill,
+Use `Sprint.0` for initial planning, then `I.x` (Inception), `E.x`
+(Elaboration), `C.x` (Construction), and `T.x` (Transition), numbering each
+phase from 1. See [P0.phase](RUP_patch.md#p0phase-use-stable-phase-based-sprint-ids)
+for the authoritative heading and evidence-path convention.
+
+## Start Sprint.0
+
+Sprint.0 is already marked `Status: Progress` by the bootstrap plan. Ask
+Codex explicitly to start Sprint.0 with the `rup-strikes-back` skill,
 and supply the initial product intent. Include the intended users, their
 problem, desired outcome, and important constraints.
 
 Example:
 
 ```text
-Start Sprint 0 in managed mode using the rup-strikes-back skill.
+Start Sprint.0 in managed mode using the rup-strikes-back skill.
 Product intent: [Describe the product, intended users, problem to solve,
 desired outcome, and important constraints.]
 ```
 
-Sprint 0 runs in managed mode by default. Codex will seek Product Owner
+Sprint.0 runs in managed mode by default. Codex will seek Product Owner
 approval for the product vision (`README.md`) and then for the initial roadmap
-and next-sprint proposal. The generic Sprint 0 backlog contains PBI-001
+and next-sprint proposal. The generic Sprint.0 backlog contains PBI-001
 (product vision) and PBI-002 (initial project plan); the Product Owner may
 refine that work based on the supplied intent.
 
@@ -65,8 +72,8 @@ covers preparation, a live demonstration, documentation quality review,
 Product Owner feedback and the explicit decision preceding sprint closure.
 It runs through the `rup-strikes-back` workflow; it is not a separate skill.
 
-Each sprint delivers one current pair in `progress/sprint_N/`:
-`sprint_N_increment_demo.pptx` and `sprint_N_increment_demo.md`. The Markdown
+Each sprint delivers one current pair in `progress/<ID>/`:
+`sprint_<ID>_increment_demo.pptx` and `sprint_<ID>_increment_demo.md`. The Markdown
 is the step-by-step end-to-end walkthrough with real prerequisites, copyable
 commands or GUI actions, expected results and matching slide references. The
 PPTX starts with an agenda, goals and architecture, uses section dividers,
@@ -75,7 +82,7 @@ completed/unfinished PBIs, and ends with conclusions and next decisions.
 The sprint user manual and handover record link to that pair. Logs and
 captures belong in the sprint's `tests/` directory as supporting evidence.
 
-For example, ask: "Prepare the Sprint 2 Product Owner handover using P9.
+For example, ask: "Prepare the E.1 Product Owner handover using P9.
 Verify the presentation pair and rehearse its complete user journey. Record
 remaining limitations and prepare it for my review." Preparation or passing
 tests does not record Product Owner acceptance; the live review and decision
@@ -97,3 +104,15 @@ tables in narrative reports.” The local [RUP patch](RUP_patch.md#p7-read-the-s
 requires agents to read this file during sprint work. The canonical
 four-column progress board remains a table unless you explicitly request a
 separate change to that method format.
+
+## Reconstructed product vision
+
+[The Sprint.0 vision](../progress/Sprint.0/sprint_Sprint.0_analysis.md)
+states the guidance product's purpose, readers, intended value and scope,
+reconstructed from the existing document and Product Owner direction.
+
+## Research and guidance development
+
+[E.1 research](../progress/E.1/sprint_E.1_research.md) captures the research
+basis for the guide. The [project roadmap](../ROADMAP.md) assigns one research
+iteration for now and places the existing guidance draft in C.1.

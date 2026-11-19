@@ -1,6 +1,6 @@
 # Sprint Plan
 
-## Sprint 0 - Vision and initial plan
+## Sprint.0 - Vision and initial plan
 
 Status: Progress
 Mode: managed
@@ -12,7 +12,7 @@ Backlog Items:
 * PBI-001. Establish the product vision
 * PBI-002. Derive the initial project plan from the vision
 
-## Sprint 1 - Inception baseline
+## I.1 - Inception baseline
 
 Status: Planned
 Mode: managed
@@ -37,7 +37,7 @@ Backlog Items:
 * PBI-009. Materialize the candidate architecture
 * PBI-010. Review the Inception baseline for consistency and viability
 
-## Sprint 2 - Elaboration 1: architecture-risk reduction
+## E.1 - Elaboration 1: architecture-risk reduction
 
 Status: Planned
 Mode: managed
@@ -47,8 +47,8 @@ Regression: smoke, unit, integration
 This provisional Elaboration iteration uses an executable architectural
 prototype to validate the highest-risk technical assumptions and use cases,
 refine requirements, stabilize the architecture baseline, assess the
-Lifecycle Architecture milestone, and create the Construction plan. Sprint 0
-and Sprint 1 may retain, refine, split, reorder, or replace it; before
+Lifecycle Architecture milestone, and create the Construction plan. Sprint.0
+and I.1 may retain, refine, split, reorder, or replace it; before
 prototype construction, iteration setup/design refines the prototype PBI into
 independently reviewable `PBI-XX.YY` sub-PBIs from the accepted candidate
 architecture without inventing work during Inception.

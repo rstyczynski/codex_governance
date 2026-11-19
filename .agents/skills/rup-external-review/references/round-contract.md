@@ -2,7 +2,10 @@
 
 ## File convention
 
-Use the current sprint's evidence directory and stable phase ID, for example `progress/E.1/`. For round N:
+Use the current sprint's complete identifier under P0.phase (`Sprint.0`,
+`I.x`, `E.x`, `C.x`, `T.x`) and its evidence directory, for example
+`progress/Sprint.0/` or `progress/E.1/`. Substitute that identifier for
+`<ID>` below. For round N:
 
 - `sprint_<ID>_review-<N>-prompt.md`: coordinator's outbound review prompt.
 - `sprint_<ID>_review-<N>.md`: original expert review.

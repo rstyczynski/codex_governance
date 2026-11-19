@@ -21,21 +21,26 @@ Update the submodule only through an explicit Product Owner request. Before adop
 
 ## P0.phase. Use stable phase-based sprint IDs
 
-By Product Owner direction on 7 October 2026, project sprint scheduling uses
-`I.n` for Inception and `E.n` for Elaboration. The Product Owner
-also designated `ES.1` for the deferred Elaboration baseline. The ordinal advances within its phase prefix; inserting work in
-another phase does not renumber a sprint. The current mapping is recorded in
-`PLAN.md`. In this project, these phase IDs override the generic numeric,
-gap-free sprint-number rule and are the labels in `PLAN.md` and
-`PROGRESS_BOARD.md`.
+By Product Owner direction on 10 November 2026, sprint identifiers are
+`Sprint.0` for vision and initial planning, `I.x` for Inception, `E.x` for
+Elaboration, `C.x` for Construction, and `T.x` for Transition. Here `x` is a
+positive integer starting at 1 and advancing independently within each phase.
+Identifiers are stable: inserting work in another phase does not renumber
+existing sprints. Do not use the copied source project's `ES` prefix.
 
-By Product Owner direction on 9 October 2026, historical evidence directories
-also use phase IDs, with maintained links and scripts updated to those paths.
-Sprint evidence uses the phase ID in its path, for example `progress/E.5/`.
-`PLAN.md` records the former numeric labels. Historical filenames, raw outputs,
-logs and decisions retain their original content; paths recorded inside raw
-evidence describe the location at execution time. `ES` is still Elaboration.
-Reserve `C.n` for work actually classified as Construction.
+`PLAN.md` and, once execution starts, `PROGRESS_BOARD.md` use these identifiers
+verbatim. Plan headings use `## <ID> - <Title>`, for example
+`## Sprint.0 - Vision and initial plan` or `## I.1 - Inception baseline`.
+This overrides the canonical numeric, globally gap-free sprint-number rule;
+all other required fields and status transitions remain unchanged.
+
+Evidence lives in `progress/<ID>/`, with sprint-specific filenames retaining
+the canonical `sprint_` prefix: for example,
+`progress/Sprint.0/sprint_Sprint.0_setup.md` and
+`progress/I.1/sprint_I.1_design.md`. Substitute the complete identifier for
+`<ID>` (or the canonical `N` placeholder) in every procedure, audit, review,
+manual and handover path. Do not create evidence directories before execution
+is explicitly requested. This project has no historical sprint migration.
 
 ## P0.0. Establish the Git baseline during bootstrap
 
@@ -47,21 +52,21 @@ After installing only the method and generic-bootstrap artifacts, bootstrap crea
 
 `BACKLOG.md` and `PLAN.md` are created before the first sprint. Progress artifacts, including `PROGRESS_BOARD.md` and sprint-specific records under `progress/`, are created and maintained by the RUP Strikes Back cycle when a sprint starts; do not create placeholder progress files in advance unless the Product Owner explicitly requests a pre-sprint artifact. Such a file does not start the sprint.
 
-Before the first code-bearing sprint, define the project’s test profile in this patch or a referenced project rule. The project uses `docs/test-profile.md` for this purpose. It must map the generic test and regression fields to the actual project’s build, smoke-test, unit-test, integration-test, and applicable operational-validation commands. Do not claim that the submodule’s sample shell-test commands apply to the project. A test-profile template does not satisfy this gate: PBI-009 must replace its pending command fields with the candidate architecture's actual commands before Sprint 2 starts.
+Before the first code-bearing sprint, define the project’s test profile in this patch or a referenced project rule. The project uses `docs/test-profile.md` for this purpose. It must map the generic test and regression fields to the actual project’s build, smoke-test, unit-test, integration-test, and applicable operational-validation commands. Do not claim that the submodule’s sample shell-test commands apply to the project. A test-profile template does not satisfy this gate: PBI-009 must replace its pending command fields with the candidate architecture's actual commands before E.1 starts.
 
-## P0.2. Generic artifacts bootstrap Sprint 0
+## P0.2. Generic artifacts bootstrap Sprint.0
 
-`RUPStrikesBack.patch/bootstrap/` contains reusable RUP roadmap, backlog, sprint-plan, and test-profile templates, a generic `AGENTS.md`, and Codex skill adapters. `RUPStrikesBack.patch/BOOTSTRAP_PROMPT.md` is the operator-only bootstrap prompt and is deliberately kept outside the overlay. These artifacts are inputs to Sprint 0 only; they are not product requirements or active product backlog items. The bootstrap plan preselects Sprint 0 with `Status: Progress`, but execution still requires an explicit Product Owner request.
+`RUPStrikesBack.patch/bootstrap/` contains reusable RUP roadmap, backlog, sprint-plan, and test-profile templates, a generic `AGENTS.md`, and Codex skill adapters. `RUPStrikesBack.patch/BOOTSTRAP_PROMPT.md` is the operator-only bootstrap prompt and is deliberately kept outside the overlay. These artifacts are inputs to Sprint.0 only; they are not product requirements or active product backlog items. The bootstrap plan preselects Sprint.0 with `Status: Progress`, but execution still requires an explicit Product Owner request.
 
-At project initialization, overlay the complete contents of `RUPStrikesBack.patch/bootstrap/` onto the project root, including hidden directories. Do not copy `RUPStrikesBack.patch/BOOTSTRAP_PROMPT.md` into the project root. The Product Owner explicitly requests execution of the preselected Sprint 0 and supplies the initial product intent through the working conversation. PBI-001 creates and accepts the project `README.md` as the vision product. Sprint 0 then derives this project’s real roadmap and proposes the next sprint from that vision. The generic later-sprint entries are initial hypotheses: Sprint 0 or subsequent iterations may retain, refine, split, reorder, or replace them. After Sprint 0, the root project artifacts—not the generic templates—are the sources of truth for the project’s scope and delivery work.
+At project initialization, overlay the complete contents of `RUPStrikesBack.patch/bootstrap/` onto the project root, including hidden directories. Do not copy `RUPStrikesBack.patch/BOOTSTRAP_PROMPT.md` into the project root. The Product Owner explicitly requests execution of the preselected Sprint.0 and supplies the initial product intent through the working conversation. PBI-001 creates and accepts the project `README.md` as the vision product. Sprint.0 then derives this project’s real roadmap and proposes the next sprint from that vision. The generic later-sprint entries are initial hypotheses: Sprint.0 or subsequent iterations may retain, refine, split, reorder, or replace them. After Sprint.0, the root project artifacts—not the generic templates—are the sources of truth for the project’s scope and delivery work.
 
-The generic bootstrap is deliberately tailored over its first three iterations. Sprint 0 proposes an initial lifecycle and iteration plan from the vision. Sprint 1 tests and refines that plan against business context, requirements, scope, risks, and an initial architecture. Sprint 2 refines it again from technical-validation evidence and the Lifecycle Architecture assessment. In each of these iterations, the agent must propose additions, removals, mergers, splits, reordered work, or a simpler path when the project’s size, uncertainty, existing assets, constraints, or risk profile justify it. In managed mode, the Product Owner accepts each material plan change. The plan must record the decision and rationale; generic tasks are defaults, never mandatory ceremony.
+The generic bootstrap is deliberately tailored over its first three iterations. Sprint.0 proposes an initial lifecycle and iteration plan from the vision. I.1 tests and refines that plan against business context, requirements, scope, risks, and an initial architecture. E.1 refines it again from technical-validation evidence and the Lifecycle Architecture assessment. In each of these iterations, the agent must propose additions, removals, mergers, splits, reordered work, or a simpler path when the project’s size, uncertainty, existing assets, constraints, or risk profile justify it. In managed mode, the Product Owner accepts each material plan change. The plan must record the decision and rationale; generic tasks are defaults, never mandatory ceremony.
 
 ## P0.3. Place project artifacts by lifecycle role
 
 The root `README.md` holds the accepted product vision and project orientation. `docs/` holds durable shared project deliverables created and accepted during sprints, such as requirements, architecture, decisions, and operating documentation.
 
-`progress/<phase-ID>/` directories hold evidence and review artifacts for one sprint, including migrated historical evidence. `tmp/` holds provisional material retained only for reference; it is not a source of truth and must be recreated in `docs/` or another approved location when a sprint formally delivers it. `RUPStrikesBack.patch/bootstrap/` remains the reusable bootstrap input described above.
+`progress/<ID>/` directories hold evidence and review artifacts for one sprint, using the identifier defined in P0.phase. `tmp/` holds provisional material retained only for reference; it is not a source of truth and must be recreated in `docs/` or another approved location when a sprint formally delivers it. `RUPStrikesBack.patch/bootstrap/` remains the reusable bootstrap input described above.
 
 ## P0.4. Anchor progress-board items to an assigned sprint
 
@@ -81,13 +86,32 @@ canonical `/backlog add` instruction only for unscheduled proposals.
 
 The Codex RUP Strikes Back manager's complete contracting, analysis/design, construction, quality-validation, and wrap-up pipeline is primarily a code-bearing Construction-iteration workflow. It should run fully when a sprint creates or materially changes production code.
 
-Sprint 0 and Inception iterations use the same collaboration discipline, but produce vision, requirements, plans, risk evidence, and reviews rather than forcing implementation. An Elaboration iteration may construct a prototype and run technical tests when that is needed to retire risk, but it need not produce a production feature. In non-code-bearing iterations, construction and automated-test gates may be not applicable; the plan and sprint evidence must state the reason and define the appropriate review or experiment instead.
+Sprint.0 and Inception iterations use the same collaboration discipline, but produce vision, requirements, plans, risk evidence, and reviews rather than forcing implementation. An Elaboration iteration may construct a prototype and run technical tests when that is needed to retire risk, but it need not produce a production feature. In non-code-bearing iterations, construction and automated-test gates may be not applicable; the plan and sprint evidence must state the reason and define the appropriate review or experiment instead.
 
 This is not a waterfall handoff. Every iteration consciously considers the relevant RUP disciplines, at a depth proportional to its purpose, risk, and lifecycle phase. The RUP Strikes Back workflow inside an iteration does not itself advance the product from one project-level RUP phase to the next.
 
+### Documentation-only research and Construction allocation
+
+By Product Owner direction on 18 November 2026, this project's deliverable
+is the guidance document. E.1 is a single research iteration for now, and
+the existing guidance content belongs to C.1. Documentary research and
+review replace the generic executable-prototype proposal for this scope;
+no deployment implementation or test result is implied. The research record
+is [E.1 research](../progress/E.1/sprint_E.1_research.md), and the tailored
+[roadmap](../ROADMAP.md) connects it to the product vision and Construction.
+
+The generic prototype, software-command and code-bearing E.1 prerequisites
+apply only if a later Product Owner decision introduces code-bearing work.
+For this documentation-only scope, source review, consistency and local-link
+checks are the appropriate quality evidence. Existing generic backlog items
+PBI-011 through PBI-016 are unscheduled bootstrap defaults, not active delivery
+commitments. PBI-017 and PBI-018 define the selected research and guidance work.
+Reconstruction does not itself close earlier sprints or record handover
+acceptance; scheduling and status remain owned by PLAN.md.
+
 ## P1.1. Use progressive plan refinement as a first-class outcome
 
-The plan is an evolving project artifact, not a one-time bootstrap output. Sprint 0 creates the initial project plan. Sprint 1 establishes or revises the Inception plan and evaluates the Lifecycle Objectives decision. Sprint 2 establishes or revises the Construction plan from technical evidence and evaluates the Lifecycle Architecture decision. Later iterations continue to refine scope, risks, ordering, quality expectations, and release plans when evidence requires it.
+The plan is an evolving project artifact, not a one-time bootstrap output. Sprint.0 creates the initial project plan. I.1 establishes or revises the Inception plan and evaluates the Lifecycle Objectives decision. E.1 establishes or revises the Construction plan from technical evidence and evaluates the Lifecycle Architecture decision. Later iterations continue to refine scope, risks, ordering, quality expectations, and release plans when evidence requires it.
 
 ## P1.2. Materialize durable Inception requirements and architecture artifacts
 
@@ -152,7 +176,7 @@ Each backlog item must retain its own value statement and acceptance signal. The
 
 The project root `BACKLOG.md` is the source of Product Owner priorities. The project root `PLAN.md` is the source of sprint selection and status. When installed, the root `RUP_patch.md` points to `RUPStrikesBack.patch/RUP_patch.md`, which defines local policy that supplements or overrides the generic method in the `RUPStrikesBack` submodule.
 
-Sprint 0 is marked `Progress` by the bootstrap plan. To execute it, the Product Owner explicitly invokes the Codex `rup-strikes-back` skill in the declared mode. For a later planned sprint, the Product Owner first changes that sprint’s status in the root `PLAN.md` from `Planned` to `Progress`, then explicitly invokes the skill. The agent reads its manager and selected phase procedures from `.agents/skills/rup-strikes-back/references/`, then applies this local patch before executing the sprint.
+Sprint.0 is marked `Progress` by the bootstrap plan. To execute it, the Product Owner explicitly invokes the Codex `rup-strikes-back` skill in the declared mode. For a later planned sprint, the Product Owner first changes that sprint’s status in the root `PLAN.md` from `Planned` to `Progress`, then explicitly invokes the skill. The agent reads its manager and selected phase procedures from `.agents/skills/rup-strikes-back/references/`, then applies this local patch before executing the sprint.
 
 `rup-strikes-back` is the Codex method entry point. The submodule's `/rup-manager` is a Claude compatibility command, not a native Codex command. Managed mode remains the default: the agent pauses for Product Owner approval at the defined decision points.
 
@@ -198,7 +222,7 @@ an assigned PBI or a sprint-tracked child PBI with its own completion
 evidence. Do not commit after each file change or merely because a phase has
 advanced. After each increment is complete, reconcile its code, tests, and
 documentation as one unit. Before committing it, create or update the active
-sprint's documentation audit under `progress/sprint_N/`. The audit must check
+sprint's documentation audit under `progress/<ID>/`. The audit must check
 the root SRS, architecture, test profile, sprint setup, accepted design and
 test specification, implementation record, functional test record, README,
 and progress board against the latest Product Owner decisions and actual
@@ -293,8 +317,8 @@ live demo.
 
 #### One presentation pair and its supporting records
 
-Maintain one current presentation pair in `progress/sprint_N/`:
-`sprint_N_increment_demo.pptx` and `sprint_N_increment_demo.md`. Their basenames
+Maintain one current presentation pair in `progress/<ID>/`:
+`sprint_<ID>_increment_demo.pptx` and `sprint_<ID>_increment_demo.md`. Their basenames
 must match. The Markdown file is the Product Owner's complete end-to-end
 walkthrough, including runnable steps and expected results, as well as the
 presenter's slide references. It must lead a reader through the increment
@@ -302,13 +326,13 @@ without requiring them to assemble instructions from implementation records,
 raw logs, screenshots or slide notes. Link this entry point prominently from
 the project README, sprint manual and handover record.
 
-Keep the operating reference in `progress/sprint_N/user_manual.md`. State
+Keep the operating reference in `progress/<ID>/user_manual.md`. State
 supported tasks, prerequisites, recovery and known limits, and link to the
 presentation walkthrough. A release-ready copy may be promoted to `docs/`
 after review, with its scope and links reconciled. Do not create a second
 manual in the repository root. Record the demonstration and Product Owner
-decision in `progress/sprint_N/sprint_N_handover.md`; place rehearsal logs,
-captures, saved outputs and validation receipts in `progress/sprint_N/tests/`.
+decision in `progress/<ID>/sprint_<ID>_handover.md`; place rehearsal logs,
+captures, saved outputs and validation receipts in `progress/<ID>/tests/`.
 
 Use the canonical PPTX path for revisions. Remove superseded working decks
 from the user-facing delivery set when authorized; preserve necessary history
@@ -484,7 +508,7 @@ applicable tests. A local commit does not authorize a remote push.
 
 Record preflight and rehearsal results, live steps performed, observed results,
 Product Owner questions, and remaining demonstration limits in
-`progress/sprint_N/sprint_N_handover.md`. A broken example, unsupported claim,
+`progress/<ID>/sprint_<ID>_handover.md`. A broken example, unsupported claim,
 missing material limitation, unreadable slide, or live-demo blocker prevents
 handover acceptance until corrected. A known product failure may be shown if
 its effect and follow-up are made explicit.

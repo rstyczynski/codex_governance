@@ -1,35 +1,37 @@
-# Generic RUP Lifecycle Roadmap Template
+# Guidance development roadmap
 
-This is a reusable lifecycle outline. A project creates its own roadmap from its accepted vision; it does not inherit project scope from this template.
+## Vision — Sprint.0
 
-## Inception
+Establish why the guide is needed, whom it serves and the outcome it should
+enable. The [vision](progress/Sprint.0/sprint_Sprint.0_analysis.md) covers
+confidentiality and business know-how in OpenAI use for small, medium-sized
+and large organizations. The deliverable is guidance; deployment implementation
+and validation remain separate.
 
-1. Establish the product vision and intended outcomes.
-2. Define stakeholders, use cases, and success criteria.
-3. Materialize the Software Requirements Specification (SRS).
-4. Establish and prioritize the Product Backlog.
-5. Define the initial release scope and acceptance criteria.
-6. Identify constraints, assumptions, and major risks.
-7. Materialize the candidate architecture.
-8. Review the Inception baseline for consistency and viability.
+## Inception — I.1
 
-## Elaboration
+Clarify reader needs, scope, representative decisions and success criteria.
+Reuse the agreed vision and existing business understanding when reconstructing
+this baseline. Do not introduce a software deployment as the product.
 
-1. When a prototype PBI spans independently reviewable work, refine it during
-   iteration setup/design from the accepted candidate architecture.
-2. Build an executable architectural prototype and validate significant
-   technical assumptions and representative use cases.
-3. Refine requirements, design, and the release plan from validation evidence,
-   then establish the executable architecture baseline.
-4. Assess the Lifecycle Architecture milestone and create or revise the
-   Construction plan from the evidence.
+## Elaboration — E.1
 
-## Construction
+Use one research iteration for now. Establish the evidence, distinctions,
+control boundaries and unresolved questions needed to develop the guide.
+The [research record](progress/E.1/sprint_E.1_research.md) provides the findings
+for review. Research may be extended if a material uncertainty requires it.
 
-1. Deliver prioritized backlog increments through iterative analysis, design, implementation, and testing.
-2. Maintain traceability, quality evidence, and risk management.
+## Construction — C.1
+
+The existing [guidance draft](openai-confidentiality-draft.md) belongs to the
+first Construction iteration, by Product Owner direction. Develop the content
+from the vision and research. Make the three organizational contexts explicit
+and describe organization-specific policies, configurations and validation
+results as examples or required evidence, rather than deliverables supplied
+by the guide. Existing content does not imply iteration completion.
 
 ## Transition
 
-1. Prepare release, deployment, adoption, support, and feedback activities.
-2. Stabilize the product and plan the next lifecycle iteration.
+Prepare the guide for its intended readers through the agreed review,
+publication and maintenance arrangements. No Transition iteration is assigned
+yet. The [sprint plan](PLAN.md) owns scheduling and statuses.

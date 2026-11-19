@@ -12,7 +12,7 @@ planning aid, not evidence that quality gates can run.
 
 ## Initial Elaboration settings
 
-The generic Sprint 2 proposal uses `Test: smoke, unit, integration` and
+The generic E.1 proposal uses `Test: smoke, unit, integration` and
 `Regression: smoke, unit, integration`. Tailor those values when the accepted
 architecture or actual iteration scope justifies a different quality profile.
 
@@ -58,6 +58,6 @@ or in an accepted referenced project rule.
 
 ## Acceptance gate
 
-Before Sprint 2 changes to `Progress`, PBI-009 must select the toolchain,
+Before E.1 changes to `Progress`, PBI-009 must select the toolchain,
 replace all pending command fields, and obtain Product Owner acceptance of
 this profile.

@@ -1,8 +1,8 @@
 # Sprint Plan
 
-## Sprint 0 - Vision and initial plan
+## Sprint.0 - Vision and initial plan
 
-Status: Progress
+Status: Done
 Mode: managed
 Test: none
 Regression: none
@@ -12,9 +12,9 @@ Backlog Items:
 * PBI-001. Establish the product vision
 * PBI-002. Derive the initial project plan from the vision
 
-## Sprint 1 - Inception baseline
+## I.1 - Inception baseline
 
-Status: Planned
+Status: Done
 Mode: managed
 Test: none
 Regression: none
@@ -37,27 +37,38 @@ Backlog Items:
 * PBI-009. Materialize the candidate architecture
 * PBI-010. Review the Inception baseline for consistency and viability
 
-## Sprint 2 - Elaboration 1: architecture-risk reduction
+## E.1 - Research basis for the guidance
 
 Status: Planned
 Mode: managed
-Test: smoke, unit, integration
-Regression: smoke, unit, integration
+Test: none
+Regression: none
 
-This provisional Elaboration iteration uses an executable architectural
-prototype to validate the highest-risk technical assumptions and use cases,
-refine requirements, stabilize the architecture baseline, assess the
-Lifecycle Architecture milestone, and create the Construction plan. Sprint 0
-and Sprint 1 may retain, refine, split, reorder, or replace it; before
-prototype construction, iteration setup/design refines the prototype PBI into
-independently reviewable `PBI-XX.YY` sub-PBIs from the accepted candidate
-architecture without inventing work during Inception.
+Reconstruct one documentation-only Elaboration iteration from the research
+behind the guide. Review the findings, evidence boundaries and remaining
+questions against the vision, including small, medium-sized and large
+organizations. Validation is source and document review; no executable
+prototype or deployment test is required. The research record is available
+for review at [E.1 research](progress/E.1/sprint_E.1_research.md).
 
 Backlog Items:
 
-* PBI-011. Build an executable architectural prototype
-* PBI-012. Validate critical technical assumptions and use cases
-* PBI-013. Refine use cases and supplementary requirements
-* PBI-014. Stabilize the architecture baseline
-* PBI-015. Assess the Lifecycle Architecture milestone
-* PBI-016. Create the Construction plan
+* PBI-017. Establish the research basis for the guidance
+
+## C.1 - Develop the first guidance draft
+
+Status: Planned
+Mode: managed
+Test: none
+Regression: none
+
+The Product Owner assigns the existing guidance content to Construction
+iteration 1. The [master document](openai-confidentiality-draft.md) is the
+entry point to that content. Develop and review it as an extension of the
+vision and research, including proportionate organizational examples and
+clear separation of guidance from deployment evidence. This allocation does
+not declare the draft or iteration complete.
+
+Backlog Items:
+
+* PBI-018. Develop the first guidance draft
