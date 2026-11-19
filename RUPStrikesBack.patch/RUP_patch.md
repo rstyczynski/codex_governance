@@ -118,7 +118,8 @@ The plan is an evolving project artifact, not a one-time bootstrap output. Sprin
 When an Inception iteration establishes the initial requirements, PBI-005
 materializes `docs/srs.md` as the Software Requirements Specification (SRS).
 It records the accepted system boundary, stakeholders, use cases and success
-criteria, functional and non-functional requirements, initial release scope,
+criteria, functional requirements, a reference to the authoritative root
+`NFR.md` non-functional requirements register, initial release scope,
 constraints, assumptions, and risks needed to guide the next iteration.
 
 PBI-009 materializes `docs/architecture.md` as the accepted candidate
@@ -132,6 +133,64 @@ These artifacts are created from the accepted project vision during Inception;
 they are not blank bootstrap templates. Later iterations refine them when
 validation evidence or product decisions change their content. The Inception
 review evaluates them together with the Product Backlog and test profile.
+
+### Maintain non-functional requirements and the SRS with every increment
+
+By Product Owner direction on 19 November 2026, maintain non-functional
+requirements in `NFR.md` in the project root. This is the authoritative
+register for product quality requirements, including those applicable to
+documentation-only products. It is a durable product artifact, an explicit
+exception to the default `docs/` placement in P0.3. Create its initial contents
+from agreed requirements; do not treat a missing or empty register as evidence
+of compliance.
+
+Each NFR must have a stable identifier (`NFR-001`, and so on), a clear
+requirement, its rationale or source decision, its applicability, and a
+measurable acceptance criterion or explicit review method. State proposed
+requirements and unresolved targets as pending Product Owner decisions;
+do not invent accepted thresholds. Preserve identifiers when requirements
+change and record the reason for material changes.
+
+`BACKLOG.md` holds prioritized delivery work and acceptance criteria for
+functional outcomes. It may also contain work needed to satisfy an NFR;
+such items reference the NFR identifier rather than becoming a second
+non-functional requirements register. `docs/srs.md` owns the integrated
+requirements context, actor/use-case model, functional specification and
+scope. It links to `NFR.md` for non-functional requirements, and traces
+functional requirements to backlog items. Keep reciprocal links between
+these maintained requirements documents when materializing them. This
+refines PBI-005's reference to non-functional requirements: the SRS integrates
+them by reference rather than maintaining duplicate normative text.
+
+For every product increment, including a guidance-document increment,
+review the complete NFR register before declaring the increment complete.
+Validate compliance with every applicable NFR, considering regression in
+existing product content or behavior as well as the new work. Reuse prior
+evidence only with an explicit applicability justification; rerun checks
+affected by the change. For each NFR, record the result, supporting evidence,
+and any non-applicability rationale in the increment's existing validation
+or documentation-audit record. An unverified requirement is pending, not
+passed. A missing register or an unmet applicable accepted NFR blocks the
+increment's completion until corrected or explicitly changed by the Product
+Owner; do not weaken requirements simply to pass validation.
+
+In the same review, assess whether the increment, research, defects or
+Product Owner decisions expose missing NFRs or require existing ones to be
+extended, clarified or retired. Record the outcome even when no change is
+needed. Apply accepted updates to `NFR.md`, trace affected delivery work
+through the backlog procedure, and validate the increment against the updated
+register. Material changes remain subject to Product Owner acceptance.
+
+Review `docs/srs.md` on every increment as well. Update it in the same
+increment whenever accepted changes affect scope, actors, use cases,
+functional behavior, success criteria, constraints, assumptions, risks or
+requirements links; otherwise record that it was reviewed and remains
+current. PBI-005 still owns initial SRS materialization during Inception.
+If it is missing after that point, record the baseline gap and obtain a
+Product Owner scheduling decision through the sprint procedure; do not
+claim it exists or silently reopen a completed sprint. Requirements
+maintenance is ongoing work, not deferred exclusively to PBI-013 or a
+separate final documentation sprint.
 
 ### Keep materialized documents connected
 
@@ -223,7 +282,7 @@ evidence. Do not commit after each file change or merely because a phase has
 advanced. After each increment is complete, reconcile its code, tests, and
 documentation as one unit. Before committing it, create or update the active
 sprint's documentation audit under `progress/<ID>/`. The audit must check
-the root SRS, architecture, test profile, sprint setup, accepted design and
+`docs/srs.md`, root `NFR.md`, architecture, test profile, sprint setup, accepted design and
 test specification, implementation record, functional test record, README,
 and progress board against the latest Product Owner decisions and actual
 executable behavior. Record each checked artifact, the evidence inspected,
@@ -232,6 +291,9 @@ Check copy-paste commands and expected output against real execution before
 calling them working examples. Label proposed commands and unrun tests as
 pending. Keep the required progress-board table, but follow
 `USER_PREFERENCES.md` for narrative documents.
+
+Include the per-NFR compliance results, the NFR completeness/extension
+assessment, and the SRS maintenance decision required by P1.2 in this audit.
 
 Run the applicable build, tests, experiments, syntax or link checks, and
 `git diff --check` before the commit. Record the exact checks and their
